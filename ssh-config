@@ -1,0 +1,8 @@
+# SSH multiplexing
+Host *
+  ControlMaster auto
+  ControlPath ~/.ssh/master-%r@%h:%p
+#CAEN
+Host dj
+ HostName login.engin.umich.edu 
+ User jomaad
